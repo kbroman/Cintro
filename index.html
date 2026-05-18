@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> <head>
+<title>Intro to C</title>
+<link rel=stylesheet type="text/css" href="kbroman.css">
+</head>
+
+<body>
+
+<h2>Introduction to C</h2>
+
+<p>All statisticians should be proficient in <a
+href="http://www.biostat.wisc.edu/~kbroman/Cintro">C</a> (for speed),
+<a href="http://www.biostat.wisc.edu/~kbroman/perlintro">perl</a>
+(for data manipulation), and
+<a href="http://www.biostat.wisc.edu/~kbroman/Rintro">R</a> (for
+interactive analyses and graphics).  Think "CPR".
+
+<p>I use C for all computationally intensive tasks, but I no longer
+write stand-alone C programs.  All of my C code is written within
+add-on packages for R.  This makes the data input/output easy, and we
+don't need to worry about the interface.  Plus, the results come out
+within R, and so they are immediately available for further analyses.
+Also, the R package incorporates documentation.  Most importantly, R
+has an extensive library of mathematical and statistical functions
+that we can use directly from our C code.
+
+<p>While I intended this page to provide an introduction similar to my
+<a href="http://www.biostat.wisc.edu/~kbroman/perlintro">Introduction
+to Perl</a> page, instead, I am leaving this as a list of links.
+The <a
+href="http://cran.r-project.org/doc/manuals/R-exts.html">Writing R
+Extensions</a> manual is particularly important, as it discusses package
+creation, the interface to C, and how to get at the R's library of
+code.
+
+<p class=noindent><hr>
+
+<h3>Resources</h3>
+
+<h4>Books</h4>
+
+<ul>
+  <li> S Oliveira and D Stewart (2006) <a href="http://www.amazon.com/exec/obidos/ASIN/0521675952/7210-20">Writing scientific software: A guide to good style</a>.  Cambridge University Press.
+
+  <li> BW Kernighan and DM Ritchie (1988) <a href="http://www.amazon.com/exec/obidos/ASIN/0131103628/7210-20">The C programming language</a>, 2nd edition.  Prentice Hall, Englewood Cliffs, NJ.
+  <li> PJ Plauger (1992) <a href="http://www.amazon.com/exec/obidos/ASIN/0131315099/7210-20">The standard C library</a>. Prentice Hall, Englewood Cliffs, NJ.
+  <li> WH Press et al. (1992) <a href="http://www.amazon.com/exec/obidos/ASIN/0521431085/7210-20">Numerical recipes in C: The art of scientific computing</a>, 2nd edition.  Cambridge University Press.
+  <li> BW Kernighan and R Pike (1999) <a href="http://www.amazon.com/exec/obidos/ASIN/020161586X/7210-20">The practice of programming</a>. Addison-Wesley, Reading, MA.
+  <li> S Oualline (1992) <a href="http://www.amazon.com/exec/obidos/ASIN/1558512918/7210-20">C Elements of Style</a>.  M&T Books, San Mateo, CA.
+  <li> S Oualline (1997) <a
+      href="http://www.amazon.com/exec/obidos/ASIN/1565923065/7210-20">Practical C programming</a>, 3rd edition.  O'Reilly & Associates, Sebastopol, CA.
+  <li> K Loudon (1999)
+      <a href="http://www.amazon.com/exec/obidos/ASIN/1565924533/7210-20">Mastering algorithms with C</a>.  O'Reilly & Associates, Sebastopol, CA.
+  <li> MK Loukides et al. (1997) <a href="http://www.amazon.com/exec/obidos/ASIN/1565921127/7210-20">Programming with GNU software</a>.  O'Reilly & Associates, Sebastopol, CA.
+</ul>
+
+<a name="R"><h4>R manuals</h4></a>
+<ul>
+  <li><a href="http://cran.r-project.org/manuals.html">The complete list</a></li>
+  <li><a
+      href="http://cran.r-project.org/doc/manuals/R-exts.html">Writing
+      R Extensions</a></li>
+      </ul>
+
+
+<a name="IMSL"><h4>Math/stat subroutine libraries</h4></a>
+
+<p class=indent>All I need is available with <a href="http://www.r-project.org">R</a>.
+
+<!--
+<p> Hopkins biostat has access to the IMSL subroutine library (in
+Fortran).  It's located in<code>/usr/local/vni/CTT3.0/lib/lib.solaris</code>.  See the
+documentation in <code>/usr/local/vni/CTT3.0/help</code> and
+<code>/usr/local/vni/CTT3.0/notes</code>.
+
+<p> To get things to work, I believe you need to do the following
+(I've not tried this yet myself):
+<ul>
+  <li> Add <code>/usr/local/vni/CTT3.0/lib/lib.solaris</code> to your
+      <code>LD_LIBRARY_PATH</code>. (For example, add a line
+      to your <code>.cshrc</code> file.)
+  <li> When compiling, put <code>-limsl</code> at the end of the
+      <code>cc</code> or <code>gcc</code> command, along with the
+      usual <code>-lm</code> to link the usual math library.
+</ul>
+-->
+
+<p class=noindent><hr>
+<table cellspacing="0" cellpadding="0" width=100%>
+<tr><td align="left"><p class=noindent>
+<a href="https://kbroman.org/">Back to home page</a>
+<td align="right"><font size=1>
+<!-- hhmts start -->
+Last modified: Mon Feb  4 08:46:58 2013
+<!-- hhmts end -->
+</table>
+</body></html>
